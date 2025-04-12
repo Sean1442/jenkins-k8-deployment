@@ -5,7 +5,7 @@ pipeline {
 
     environment {
         CERT_PASSWORD = credentials('CERT_PASSWORD')
-        IMAGE_NAME = "devops091/dotnet-app"
+        IMAGE_NAME = "seandoc1442/dotnet-app"
         PASSWORD = credentials('dockerhub')
         REGISTRY = "https://index.docker.io/v1/"
         USER = "devops091"
