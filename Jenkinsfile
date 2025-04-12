@@ -8,7 +8,7 @@ pipeline {
         IMAGE_NAME = "seandoc1442/dotnet-app"
         PASSWORD = credentials('dockerhub')
         REGISTRY = "https://index.docker.io/v1/"
-        USER = "devops091"
+        USER = "seandoc1442"
         APP_NAME = "dotnet-app"
         DOCKER_HUB_EMAIL = "nanditechbytes@gmail.com"
     }
@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/nanditechbytes/jenkins-k8-deployment.git'
+                git branch: 'main', url: 'https://github.com/Sean1442/jenkins-k8-deployment.git'
             }
         }
         stage('Build') {
